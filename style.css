@@ -59,10 +59,13 @@ html, body {
   flex-shrink: 0;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+<<<<<<< HEAD
 .search button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+=======
+>>>>>>> 84ae33082ddac7321ade73798aa616ff2d53fb30
 
 .search button i {
   font-size: 16px;
@@ -94,10 +97,13 @@ html, body {
 .weather-icon {
   width: 150px;
   margin-top: 25px;
+<<<<<<< HEAD
   transition: transform 0.5s ease;
 }
 .weather.show .weather-icon:hover {
   transform: rotate(10deg);
+=======
+>>>>>>> 84ae33082ddac7321ade73798aa616ff2d53fb30
 }
 .weather h1 {
   font-size: 50px;
