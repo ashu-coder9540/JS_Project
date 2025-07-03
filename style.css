@@ -19,67 +19,64 @@ html, body {
   width: 90%;
   max-width: 470px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   border-radius: 20px;
-  padding: 40px 35px;
+  padding: 30px 20px;
   text-align: center;
-  transition: background 0.5s ease;
 }
 
 .search {
   display: flex;
   width: 100%;
-  gap: 12px;
+  gap: 10px;
 }
 
 .search input {
   flex: 1;
-  padding: 10px 20px;
-  height: 50px;
+  padding: 10px 16px;
+  height: 45px;
   border: none;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   color: #333;
   outline: none;
-  transition: box-shadow 0.3s;
+   transition: box-shadow 0.3s;
 }
-
 .search input:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .search button {
-  min-width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
   flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .search button:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .search button i {
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
 }
 
 .error {
   text-align: center;
   color: #ffdddd;
-  background: rgba(255, 0, 0, 0.15);
+  background: rgba(255, 0, 0, 0.1);
   padding: 10px;
   border-radius: 8px;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 15px;
   display: none;
 }
 
@@ -99,18 +96,16 @@ html, body {
   margin-top: 25px;
   transition: transform 0.5s ease;
 }
-
 .weather.show .weather-icon:hover {
   transform: rotate(10deg);
 }
-
 .weather h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
 }
 
 .weather h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   margin-top: -5px;
 }
@@ -118,56 +113,44 @@ html, body {
 .details {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 25px;
   padding: 0 10px;
+  flex-wrap: wrap;
 }
 
 .col {
   display: flex;
   align-items: center;
-  text-align: left;
+  margin: 10px 0;
 }
 
 .col img {
-  width: 35px;
+  width: 30px;
   margin-right: 8px;
 }
 
 .humidity, .wind {
-  font-size: 20px;
+  font-size: 18px;
 }
 
-@media (max-width: 480px) {
-  .card {
-    padding: 30px 20px;
+/* Extra responsive tweaks for small devices */
+@media (max-width: 400px) {
+  .search {
+    flex-direction: column;
   }
 
   .search input {
-    padding: 8px 16px;
-    height: 45px;
-    font-size: 14px;
+    width: 100%;
+    margin-right: 0;
   }
 
   .search button {
-    min-width: 45px;
-    height: 45px;
-  }
-
-  .weather h1 {
-    font-size: 45px;
-  }
-
-  .weather h2 {
-    font-size: 24px;
-  }
-
-  .weather-icon {
-    width: 110px;
+    width: 100%;
+    border-radius: 30px;
   }
 
   .details {
     flex-direction: column;
-    gap: 15px;
     align-items: center;
   }
 
