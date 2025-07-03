@@ -41,66 +41,7 @@ Support for different units (°C/°F)
 
 Dark mode toggle
 
-📸 Screenshots
-
 📝 License
 This project is open-source and free to use.
 
-✨ Made with ❤️ by [Your Name]
-yaml
-Copy
-Edit
-
----
-
-# ✅ 2️⃣ Add `.gitignore`
-
-Create a file named `.gitignore` in your project root.  
-**If you're not using Node or build tools**, it can be minimal:  
-
-Ignore Mac system files
-.DS_Store
-
-Ignore node_modules (if you use npm later)
-node_modules/
-
-Ignore log files
-*.log
-
-yaml
-Copy
-Edit
-
----
-
-# ✅ 3️⃣ Setup **GitHub Pages** to make your app live 🌍
-
-### ⭐ Steps
-
-1️⃣ Push your project to GitHub first (as explained before).  
-
-2️⃣ Go to your repo on GitHub → **Settings** → **Pages** (left sidebar).
-
-3️⃣ Under "Branch", select `main`, then `/ (root)`, and click **Save**.
-
-4️⃣ GitHub will give you a live link, like:  
-https://your-username.github.io/weather-app/
-
-yaml
-Copy
-Edit
-
-✅ Your app will be live and anyone can access it!
-
----
-
-# 🚀 **Final checklist before pushing**
-
-✅ Add `README.md` (copy above and save in your project).  
-✅ Add `.gitignore`.  
-✅ Commit:
-
-```bash
-git add .
-git commit -m "Add README and .gitignore for GitHub setup"
-git push
+✨ Made with ❤️ by Ashutosh Kumar
