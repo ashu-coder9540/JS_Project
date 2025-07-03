@@ -19,7 +19,7 @@ html, body {
   width: 90%;
   max-width: 470px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   border-radius: 20px;
@@ -31,19 +31,19 @@ html, body {
 .search {
   display: flex;
   width: 100%;
+  gap: 12px;
 }
 
 .search input {
   flex: 1;
-  padding: 10px 25px;
-  height: 60px;
+  padding: 10px 20px;
+  height: 50px;
   border: none;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   outline: none;
-  margin-right: 16px;
   transition: box-shadow 0.3s;
 }
 
@@ -52,13 +52,14 @@ html, body {
 }
 
 .search button {
-  width: 60px;
-  height: 60px;
+  min-width: 50px;
+  height: 50px;
   border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
 }
 
 .search button:hover {
@@ -67,7 +68,7 @@ html, body {
 }
 
 .search button i {
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -94,8 +95,8 @@ html, body {
 }
 
 .weather-icon {
-  width: 170px;
-  margin-top: 30px;
+  width: 150px;
+  margin-top: 25px;
   transition: transform 0.5s ease;
 }
 
@@ -104,12 +105,12 @@ html, body {
 }
 
 .weather h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 600;
 }
 
 .weather h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   margin-top: -5px;
 }
@@ -117,7 +118,7 @@ html, body {
 .details {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 0 10px;
 }
 
@@ -128,22 +129,49 @@ html, body {
 }
 
 .col img {
-  width: 40px;
-  margin-right: 10px;
+  width: 35px;
+  margin-right: 8px;
 }
 
 .humidity, .wind {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media (max-width: 480px) {
+  .card {
+    padding: 30px 20px;
+  }
+
+  .search input {
+    padding: 8px 16px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .search button {
+    min-width: 45px;
+    height: 45px;
+  }
+
   .weather h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
+
   .weather h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
+
   .weather-icon {
-    width: 120px;
+    width: 110px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .col {
+    justify-content: center;
   }
 }
