@@ -1,0 +1,162 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 16px;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+   transition: box-shadow 0.3s;
+}
+.search input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: 4px solid rgb(23, 195, 221);
+}
+
+.search button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.search button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search button i {
+  font-size: 16px;
+  color: #333;
+}
+
+.error {
+  text-align: center;
+  color: #ffdddd;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 15px;
+  display: none;
+}
+
+.weather {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: none;
+}
+
+.weather.show {
+  display: block;
+  opacity: 1;
+}
+
+.weather-icon {
+  width: 150px;
+  margin-top: 25px;
+  transition: transform 0.5s ease;
+}
+.weather.show .weather-icon:hover {
+  transform: rotate(10deg);
+}
+.weather h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.weather h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.col img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.humidity, .wind {
+  font-size: 18px;
+}
+
+/* Extra responsive tweaks for small devices */
+@media (max-width: 400px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .search input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search button {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    justify-content: center;
+  }
+}
