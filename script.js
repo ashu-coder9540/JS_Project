@@ -19,14 +19,14 @@ async function checkWeather(city) {
     errorBox.style.display = "none";
 
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-
+       
     if (!response.ok) {
       if (response.status == 404) {
         showError("City not found!");
       } else {
         showError("Something went wrong. Please try again.");
       }
-      return;
+     return;
     }
 
     const data = await response.json();
