@@ -1,0 +1,79 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Base Styles */
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background: #f4e4ba;
+}
+.container{
+  background: #fff;
+  padding: 2rem;
+  border: 1px solid lightblue;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 50vh;
+}
+form{
+  margin: 2rem 0 1rem 0;
+}
+form select,button,input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+form input{
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem;
+}
+.dropdown{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1rem;
+}
+.dropdown i{
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+.select-container img{
+ max-width: 2rem;
+}
+
+.select-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+}
+.select-container select{
+  font-size: 1rem;
+}
+.msg{
+ margin: 2rem 0 2rem 0;
+}
+#btn{
+  font-size: 1.15rem;
+  padding: 0.7rem 0  0.7rem 0;
+  border: 1px solid black;
+  border-radius: 0.7rem;
+  background: crimson;
+  color: #fff;
+  cursor: pointer;
+}
